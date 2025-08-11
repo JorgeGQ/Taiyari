@@ -33,56 +33,97 @@ public class frmInicioAlumno extends javax.swing.JFrame {
         btnRegistarBitacoraAlumno = new javax.swing.JButton();
         btnSolicitarCitaAlumno = new javax.swing.JButton();
         btnCerrarSesion = new javax.swing.JButton();
-        btnInicioAlumno = new javax.swing.JButton();
+        btnInicioAdmin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(208, 240, 192));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Ventana Alumno");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 103, 57));
 
         jPanel1.setBackground(new java.awt.Color(102, 187, 106));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnInicioPerfilAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioPerfilAlumno.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnInicioPerfilAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnInicioPerfilAlumno.setText("Perfil");
         btnInicioPerfilAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInicioPerfilAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInicioPerfilAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 470, -1, -1));
 
+        btnRegistarBitacoraAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnRegistarBitacoraAlumno.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnRegistarBitacoraAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistarBitacoraAlumno.setText("Registrar Emoción");
         btnRegistarBitacoraAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistarBitacoraAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRegistarBitacoraAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 630, -1, -1));
 
+        btnSolicitarCitaAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnSolicitarCitaAlumno.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnSolicitarCitaAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnSolicitarCitaAlumno.setText("Solicitar Cita");
         btnSolicitarCitaAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSolicitarCitaAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSolicitarCitaAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 710, -1, -1));
 
+        btnCerrarSesion.setBackground(new java.awt.Color(102, 187, 106));
+        btnCerrarSesion.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        btnCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
         btnCerrarSesion.setText("Cerrar Sesión");
         btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCerrarSesionActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 790, -1, -1));
 
-        btnInicioAlumno.setText("Inicio");
-        btnInicioAlumno.addActionListener(new java.awt.event.ActionListener() {
+        btnInicioAdmin.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioAdmin.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnInicioAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        btnInicioAdmin.setText("Inicio");
+        btnInicioAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInicioAlumnoActionPerformed(evt);
+                btnInicioAdminActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInicioAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 150, 80));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnInicioAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnInicioPerfilAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRegistarBitacoraAlumno)
+                        .addComponent(btnSolicitarCitaAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(229, 229, 229)
+                .addComponent(btnInicioAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
+                .addComponent(btnInicioPerfilAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
+                .addComponent(btnRegistarBitacoraAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
+                .addComponent(btnSolicitarCitaAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(245, 245, 245)
+                .addComponent(btnCerrarSesion)
+                .addContainerGap())
+        );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 1903));
 
@@ -105,9 +146,9 @@ public class frmInicioAlumno extends javax.swing.JFrame {
         new frmPerfilAlumno().setVisible(true);     this.dispose();               
     }//GEN-LAST:event_btnInicioPerfilAlumnoActionPerformed
 
-    private void btnInicioAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioAlumnoActionPerformed
+    private void btnInicioAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioAdminActionPerformed
         JOptionPane.showMessageDialog(null, "Actualmente se encuentra navegando en esta pantalla.");
-    }//GEN-LAST:event_btnInicioAlumnoActionPerformed
+    }//GEN-LAST:event_btnInicioAdminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,7 +177,7 @@ public class frmInicioAlumno extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrarSesion;
-    private javax.swing.JButton btnInicioAlumno;
+    private javax.swing.JButton btnInicioAdmin;
     private javax.swing.JButton btnInicioPerfilAlumno;
     private javax.swing.JButton btnRegistarBitacoraAlumno;
     private javax.swing.JButton btnSolicitarCitaAlumno;

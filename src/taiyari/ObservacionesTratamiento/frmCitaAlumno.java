@@ -55,6 +55,7 @@ public class frmCitaAlumno extends javax.swing.JFrame {
         jTextField5.setText("jTextField5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(102, 187, 106));
 
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -76,57 +77,99 @@ public class frmCitaAlumno extends javax.swing.JFrame {
         jScrollPane1.setViewportView(txtMotivo);
 
         jPanel1.setBackground(new java.awt.Color(102, 187, 106));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnInicioPerfilAlumno.setText("Perfil");
+        btnInicioPerfilAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioPerfilAlumno.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnInicioPerfilAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnInicioPerfilAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInicioPerfilAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInicioPerfilAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 470, -1, -1));
 
         btnRegistarBitacoraAlumno.setText("Registrar Emoción");
+        btnRegistarBitacoraAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnRegistarBitacoraAlumno.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnRegistarBitacoraAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistarBitacoraAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistarBitacoraAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRegistarBitacoraAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 630, -1, -1));
 
         btnSolicitarCitaAlumno.setText("Solicitar Cita");
+        btnSolicitarCitaAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnSolicitarCitaAlumno.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnSolicitarCitaAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnSolicitarCitaAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSolicitarCitaAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSolicitarCitaAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 710, -1, -1));
 
         btnCerrarSesion.setText("Cerrar Sesión");
+        btnCerrarSesion.setBackground(new java.awt.Color(102, 187, 106));
+        btnCerrarSesion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
         btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCerrarSesionActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 780, -1, -1));
 
         btnInicioAlumno.setText("Inicio");
+        btnInicioAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioAlumno.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnInicioAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnInicioAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInicioAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInicioAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 150, 80));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnInicioPerfilAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnRegistarBitacoraAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
+                    .addComponent(btnInicioAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSolicitarCitaAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(232, 232, 232)
+                .addComponent(btnInicioAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76)
+                .addComponent(btnInicioPerfilAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76)
+                .addComponent(btnRegistarBitacoraAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(74, 74, 74)
+                .addComponent(btnSolicitarCitaAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68)
+                .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(298, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(207, 207, 207)
+                        .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ceFechaHora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -143,7 +186,7 @@ public class frmCitaAlumno extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(306, 306, 306)
                         .addComponent(btnGuardar)))
-                .addContainerGap(1106, Short.MAX_VALUE))
+                .addContainerGap(594, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,7 +212,7 @@ public class frmCitaAlumno extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnGuardar)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1932, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 

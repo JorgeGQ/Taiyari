@@ -73,6 +73,8 @@ public class frmPerfilTutor extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 187, 106));
 
+        btnPerfilTutor.setBackground(new java.awt.Color(102, 187, 106));
+        btnPerfilTutor.setForeground(new java.awt.Color(255, 255, 255));
         btnPerfilTutor.setText("Perfil");
         btnPerfilTutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +103,9 @@ public class frmPerfilTutor extends javax.swing.JFrame {
             }
         });
 
+        btnInicioTuutor.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioTuutor.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnInicioTuutor.setForeground(new java.awt.Color(255, 255, 255));
         btnInicioTuutor.setText("Inicio");
         btnInicioTuutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

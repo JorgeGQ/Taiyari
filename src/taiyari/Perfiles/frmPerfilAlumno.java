@@ -83,45 +83,60 @@ public class frmPerfilAlumno extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 187, 106));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnInicioPerfilAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioPerfilAlumno.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnInicioPerfilAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnInicioPerfilAlumno.setText("Perfil");
         btnInicioPerfilAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInicioPerfilAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInicioPerfilAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 470, -1, -1));
+        jPanel1.add(btnInicioPerfilAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, -1, -1));
 
+        btnRegistarBitacoraAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnRegistarBitacoraAlumno.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnRegistarBitacoraAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistarBitacoraAlumno.setText("Registrar Emoción");
         btnRegistarBitacoraAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistarBitacoraAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRegistarBitacoraAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 630, -1, -1));
+        jPanel1.add(btnRegistarBitacoraAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 510, -1, -1));
 
+        btnSolicitarCitaAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnSolicitarCitaAlumno.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnSolicitarCitaAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnSolicitarCitaAlumno.setText("Solicitar Cita");
         btnSolicitarCitaAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSolicitarCitaAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSolicitarCitaAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 710, -1, -1));
+        jPanel1.add(btnSolicitarCitaAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, -1));
 
+        btnCerrarSesion.setBackground(new java.awt.Color(102, 187, 106));
+        btnCerrarSesion.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
         btnCerrarSesion.setText("Cerrar Sesión");
         btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCerrarSesionActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 760, -1, -1));
+        jPanel1.add(btnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 640, -1, -1));
 
+        btnInicioAlumno.setBackground(new java.awt.Color(102, 187, 106));
+        btnInicioAlumno.setFont(new java.awt.Font("Lexend", 1, 18)); // NOI18N
+        btnInicioAlumno.setForeground(new java.awt.Color(255, 255, 255));
         btnInicioAlumno.setText("Inicio");
         btnInicioAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInicioAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnInicioAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 150, 80));
+        jPanel1.add(btnInicioAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 150, 80));
 
         jLabel3.setText("Edad:");
 
@@ -263,7 +278,7 @@ public class frmPerfilAlumno extends javax.swing.JFrame {
                         .addComponent(lblEEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE)
                         .addContainerGap(1193, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
+                        .addGap(50, 50, 50)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );

@@ -166,22 +166,16 @@ public class frmInicioSesion extends javax.swing.JFrame {
         if(!usuario.trim().isEmpty() || !clave.trim().isEmpty()){
             if (rol != null) {            
                 switch (rol.toLowerCase()) {
-                case "alumno":
-                new frmInicioAlumno().setVisible(true); break;
-                case "tutor":
-                new frmInicioTutor().setVisible(true); break;
-                case "psicologo":
-                new frmInicioPsicologo().setVisible(true); break;
-                case "admin":
-                new frmInicioAdmin().setVisible(true); break;
+                case "alumno" -> new frmInicioAlumno().setVisible(true);
+                case "tutor" -> new frmInicioTutor().setVisible(true);
+                case "psicologo" -> new frmInicioPsicologo().setVisible(true);
+                case "admin" -> new frmInicioAdmin().setVisible(true);
                 }
                 this.dispose();
             }else{
-                JOptionPane.showMessageDialog(this, "⚠ Rol desconocido"); return;           
-            }
+                JOptionPane.showMessageDialog(this, "El usuario y/o la contraseña son incorrectas");             }
         }else{
-            JOptionPane.showMessageDialog(this, "Llene todos los campos"); return;
-        }
+            JOptionPane.showMessageDialog(this, "Llene todos los campos");         }
     }//GEN-LAST:event_btnISActionPerformed
 
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
