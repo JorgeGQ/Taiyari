@@ -1,7 +1,7 @@
 package taiyari.actuualizar;
 
 import javax.swing.JOptionPane;
-import taiyari.Usuario;
+import taiyari.Objetos.Usuario;
 import taiyari.UsuarioDAO;
 import taiyari.frmInicioSesion;
 

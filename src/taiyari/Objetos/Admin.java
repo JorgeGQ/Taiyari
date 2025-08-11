@@ -1,9 +1,10 @@
-package taiyari;
+package taiyari.Objetos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import taiyari.ConexionBD;
 
 //  @author XiCode, desarolladora por:  Jorge García,   Uriel Gonzalez,     Yhostin Ramirez    y Cristopher Escamilla.
 
@@ -49,7 +50,7 @@ public class Admin {
 
         if (con != null) {
             try {
-                String sql = "SELECT * FROM admin WHERE idAdmin = ?";
+                String sql = "SELECT * FROM administrador WHERE idAdmin = ?";
                 PreparedStatement ps = con.prepareStatement(sql);
                 ps.setString(1, idAdmin);
 

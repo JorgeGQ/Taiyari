@@ -2,7 +2,6 @@ package taiyari.ventanasRegistro;
 
 import javax.swing.JOptionPane;
 import java.sql.*;
-import javax.swing.JTextField;
 import taiyari.Ayudas;
 import static taiyari.ConexionBD.obtenerConexion;
 import taiyari.UsuarioDAO;

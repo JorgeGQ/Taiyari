@@ -1,4 +1,4 @@
-package taiyari;
+package taiyari.Objetos;
 
 //  @author XiCode, desarolladora por:  Jorge García,   Uriel Gonzalez,     Yhostin Ramirez    y Cristopher Escamilla.
 

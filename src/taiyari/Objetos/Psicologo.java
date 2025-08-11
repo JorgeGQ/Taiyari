@@ -1,9 +1,10 @@
-package taiyari;
+package  taiyari.Objetos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import taiyari.ConexionBD;
 
 //  @author XiCode, desarolladora por:  Jorge García,   Uriel Gonzalez,     Yhostin Ramirez    y Cristopher Escamilla.
 
