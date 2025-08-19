@@ -2,7 +2,6 @@ package taiyari;
 
 import javax.swing.JOptionPane;
 import taiyari.Objetos.Admin;
-import taiyari.actuualizar.frmEditarContraseña;
 import taiyari.ventanasRegistro.RegistroAdmin;
 import taiyari.ventanasRegistro.RegistroPsicologo;
 import taiyari.ventanasRegistro.RegistroTutor;

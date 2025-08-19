@@ -14,12 +14,12 @@ import taiyari.Objetos.Usuario;
 public class UsuarioDAO {
 //  MÉTODOS    
     
-    public String iniciarSesionYObtenerRol(String usuario, String contraseña) {
+    public String iniciarSesionYObtenerRol(String usuario, String contrasena) {
         try (Connection con = ConexionBD.obtenerConexion()) {
-            String sql = "SELECT nombreUsuario, rol FROM usuario WHERE nombreUsuario = ? AND contraseña = ?";
+            String sql = "SELECT nombreUsuario, rol FROM usuario WHERE nombreUsuario = ? AND contrasena = ?";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, usuario);
-            ps.setString(2, contraseña);
+            ps.setString(2, contrasena);
 
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {

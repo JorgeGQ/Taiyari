@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package taiyari.ObservacionesTratamiento;
+
+import taiyari.Ayudas;
+import taiyari.Perfiles.frmPerfilAlumno;
+import taiyari.frmInicioAlumno;
 
 /**
  *
@@ -385,7 +385,7 @@ public class frmRegEmociones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSolicitarCitaAlumnoActionPerformed
 
     private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
-        new Ayudas().volverAInicioSesion(frmBitacora.this);
+        new Ayudas().volverAInicioSesion(frmRegEmociones.this);
     }//GEN-LAST:event_btnCerrarSesionActionPerformed
 
     private void btnInicioAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioAlumnoActionPerformed
@@ -402,8 +402,7 @@ public class frmRegEmociones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNormalActionPerformed
 
     private void btnDesanimadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDesanimadoActionPerformed
-        // TODO add your handling code here:
-       
+        // TODO add your handling code here:       
     }//GEN-LAST:event_btnDesanimadoActionPerformed
 
     private void btnTristeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTristeActionPerformed

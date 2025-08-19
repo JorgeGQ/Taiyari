@@ -169,7 +169,7 @@ public class frmInicioSesion extends javax.swing.JFrame {
                 case "alumno" -> new frmInicioAlumno().setVisible(true);
                 case "tutor" -> new frmInicioTutor().setVisible(true);
                 case "psicologo" -> new frmInicioPsicologo().setVisible(true);
-                case "admin" -> new frmInicioAdmin().setVisible(true);
+                case "administrador" -> new frmInicioAdmin().setVisible(true);
                 }
                 this.dispose();
             }else{

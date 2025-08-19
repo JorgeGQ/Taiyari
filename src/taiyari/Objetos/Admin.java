@@ -27,7 +27,7 @@ public class Admin {
 
     // Getters y Setters
     public String getIdAdmin()   { return idAdmin; }
-    public void setMatricula(String matricula) { this.idAdmin = matricula; }
+    public void setIdAdmin(String idAdmin) { this.idAdmin = idAdmin; }
 
     public String getNombres()     { return nombres; }
     public void setNombres(String nombres) { this.nombres = nombres; }

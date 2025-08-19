@@ -8,7 +8,7 @@ public class ConexionBD {
     private static Connection con = null;
 
     public static Connection obtenerConexion() {
-        String url = "jdbc:mysql://localhost:3308/Taiyari";
+        String url = "jdbc:mysql://localhost:3307/taiyari";
         String usuario = "root";
         String clave = "1234";
 
