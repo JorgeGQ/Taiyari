@@ -39,7 +39,7 @@ public class UsuarioDAO {
 
     
     public boolean registrarUsuario(String nombreUsuario, String contraseña, String rol) {
-        String sql = "INSERT INTO Usuario (nombreUsuario, contraseña, rol) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO Usuario (nombreUsuario, contrasena, rol) VALUES (?, ?, ?)";
         try (Connection con = ConexionBD.obtenerConexion();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
@@ -49,7 +49,7 @@ public class UsuarioDAO {
             ps.executeUpdate();
             return true;
         }catch (SQLException ex) {
-            System.out.println("Error al registrar usuario: " + ex.getMessage());
+            
             return false;
         }
     }
@@ -90,7 +90,7 @@ public class UsuarioDAO {
     
     public Usuario obtenerUsuarioPorNombre(String nombreUsuario) {
     try (Connection con = ConexionBD.obtenerConexion()) {
-        String sql = "SELECT nombreUsuario, contraseña, rol FROM usuario WHERE nombreUsuario = ?";
+        String sql = "SELECT nombreUsuario, contrasena, rol FROM usuario WHERE nombreUsuario = ?";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setString(1, nombreUsuario);
 
@@ -98,7 +98,7 @@ public class UsuarioDAO {
         if (rs.next()) {
             Usuario u = new Usuario();
             u.setNombreUsuario(rs.getString("nombreUsuario"));
-            u.setContraseña(rs.getString("contraseña"));
+            u.setContraseña(rs.getString("contrasena"));
             u.setRol(rs.getString("rol"));
             return u;
         } else {
@@ -113,7 +113,7 @@ public class UsuarioDAO {
     
     public boolean actualizarContrasenia(Usuario usuario) {
     try (Connection con = ConexionBD.obtenerConexion()) {
-        String sql = "UPDATE usuario SET contraseña = ? WHERE nombreUsuario = ?";
+        String sql = "UPDATE usuario SET contrasena = ? WHERE nombreUsuario = ?";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setString(1, usuario.getContraseña());
         ps.setString(2, usuario.getNombreUsuario());

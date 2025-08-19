@@ -334,12 +334,18 @@ public class RegistroAdmin extends javax.swing.JFrame {
         Connection con = obtenerConexion();
         
         UsuarioDAO dao = new UsuarioDAO();
-        String rol_default = "Admin";
+        String rol_default = "Administrador";
         if(!txtID.getText().trim().isEmpty() || txtContraseña.getText().trim().isEmpty()){
             dao.registrarUsuario(txtID.getText(), txtContraseña.getText(), rol_default);
         }
-                
-        String sqlAdmin = "INSERT INTO Admin (idAdmin, nombres, apellidoP, apellidoM, edad) VALUES (?, ?, ?, ?, ?)";
+                        
+  
+        dao.registrarUsuario(txtID.getText(), txtContraseña.getText(), rol_default);
+
+        
+
+       
+        String sqlAdmin = "INSERT INTO Administrador (idAdmin, nombres, apellidoP, apellidoM, edad) VALUES (?, ?, ?, ?, ?)";
 
 
         try (
